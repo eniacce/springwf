@@ -25,7 +25,6 @@ public class StudentController {
     @RequestMapping(value = "/firstPage")
     public String firstPage(ModelMap model) {
 
-
         System.out.println("System out is working");
         model.addAttribute("message", "Spring MVC JDBCTemplate welcome page");
 
@@ -35,7 +34,7 @@ public class StudentController {
     @RequestMapping(value = "/databasetest")
     public @ResponseBody
     List<Map<String, Object>> databasetest() {
-
+        System.out.println("Deneme");
         return transformService.listStudent();
     }
 
