@@ -35,6 +35,7 @@ public class StudentController {
     public @ResponseBody
     List<Map<String, Object>> databasetest() {
         System.out.println("Deneme");
+        System.out.println("Denemmeee");
         List<Map<String, Object>> maps = transformService.listStudent();
         return transformService.listStudent();
     }
