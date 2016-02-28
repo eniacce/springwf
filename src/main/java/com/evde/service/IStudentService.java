@@ -1,5 +1,7 @@
 package com.evde.service;
 
+import com.evde.model.Student;
+
 import java.util.List;
 import java.util.Map;
 
@@ -8,4 +10,5 @@ import java.util.Map;
  */
 public interface  IStudentService {
     public List<Map<String, Object>> listStudent();
+
 }

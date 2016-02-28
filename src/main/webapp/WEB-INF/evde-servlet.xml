@@ -17,7 +17,7 @@
     <bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource">
         <property name="basename" value="messages/messages" />
     </bean>
-    <mvc:resources mapping="/resources/**" location="resources"/>
+    <mvc:resources mapping="/resources/**" location="resources/"/>
 
     <mvc:annotation-driven/>
 
@@ -47,6 +47,8 @@
 
     <bean id="studentDao" class="com.evde.dao.StudentDaoImpl" />
     <bean id="studentService" class="com.evde.service.StudentServiceImpl" />
+    <bean id="addressDao" class="com.evde.dao.AddressDaoImpl" />
+    <bean id="addressService" class="com.evde.service.AddressServiceImpl" />
 
 
 </beans>

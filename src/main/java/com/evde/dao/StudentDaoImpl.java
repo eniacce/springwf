@@ -1,5 +1,6 @@
 package com.evde.dao;
 
+import com.evde.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -18,4 +19,6 @@ public class StudentDaoImpl implements IStudentDao {
         List<Map<String, Object>> listOfPerson = jdbcTemplate.queryForList(sql);
         return listOfPerson;
     }
+
+
 }
